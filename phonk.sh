@@ -14,8 +14,8 @@ fi
 FILE="$1"
 
 # Periksa apakah file ada
-if [[ ! -f "$FILE" ]]; then
-    echo "File $FILE tidak ditemukan."
+if [[ ! -f "$Music" ]]; then
+    echo "Music $Music tidak ditemukan."
     exit 1
 fi
 
