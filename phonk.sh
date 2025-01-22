@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Lokasi direktori musik
-MUSIC_DIR="Music"
+MUSIC_DIR="/Music"
 
 # Periksa apakah direktori musik ada
 if [[ ! -d "$MUSIC_DIR" ]]; then
@@ -12,7 +12,7 @@ fi
 # Tampilkan daftar musik
 echo "=== Jarvis Music Player ==="
 echo "Daftar Musik di $MUSIC_DIR:"
-files=("$MUSIC_DIR"/*.mp3)
+files=("$MUSIC_DIR"/*Music.mp3)
 for i in "${!files[@]}"; do
     printf "%d) %s\n" $((i + 1)) "$(basename "${files[$i]}")"
 done
